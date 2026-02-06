@@ -31,20 +31,13 @@ Detected and fully investigated exploitation of the **ToolShell** zero-day vulne
 
 ### Evidence  
 All screenshots are in the `/screenshots/` folder:  
-1. Alert details (EventID 320)  
-   <img width="975" height="566" alt="Image" src="https://github.com/user-attachments/assets/09893231-10d2-4573-a185-191a56aadb56f" />  
-2. IP reputation (AbuseIPDB)  
-   <img width="975" height="649" alt="Image" src="https://github.com/user-attachments/assets/dd44ea61-365f-418c-954a-c12a2674e212" />  
-3. Process chain showing w3wp.exe → PowerShell spawn  
-   <img width="975" height="641" alt="Image" src="https://github.com/user-attachments/assets/49457b87-a0b6-4244-99c6-1a872c65b83e" />  
-4. Terminal history with hidden PowerShell and cmd echo  
-   <img width="816" height="310" alt="Image" src="https://github.com/user-attachments/assets/5c439298-52f1-44d9-b732-a163ac1821ce" />  
-5. Containment enabled on host  
-   <img width="975" height="566" alt="Image" src="https://github.com/user-attachments/assets/d7cd2682-c6c2-4292-badd-b38f381e1017" />  
-6. File search confirming spinstall0.aspx  
-   <img width="975" height="566" alt="Image" src="https://github.com/user-attachments/assets/849a6db1-cec5-46ae-94cc-ca55db5517a2" />  
-7. Closed alert – True Positive confirmation  
-   <img width="975" height="566" alt="Image" src="https://github.com/user-attachments/assets/another-asset-id-here" />  <!-- Add if you have a 7th -->
+<img width="1669" height="844" alt="1_alert_details png" src="https://github.com/user-attachments/assets/33d3ea8f-ff46-4ba3-a06c-86db4de4dd1b" />
+<img width="891" height="524" alt="2_ip_ownership" src="https://github.com/user-attachments/assets/359112cc-923c-429d-aec4-fe16897e9422" />
+<img width="819" height="549" alt="3_ip_reputation_abuseipdb png" src="https://github.com/user-attachments/assets/56137bbc-0dba-49c2-b8b1-5f1f73d63809" />
+<img width="817" height="597" alt="4_ip_reputation_abuseipd2_png" src="https://github.com/user-attachments/assets/0010cffd-0b47-4c7c-8ad3-4bd5b25594f9" />
+<img width="1104" height="426" alt="5_mailicious_process png" src="https://github.com/user-attachments/assets/094c3b82-e97c-4c22-885a-6a857cf129b5" />
+<img width="1225" height="631" alt="6_spinstall_aspx_found png" src="https://github.com/user-attachments/assets/b7d4f437-6567-414b-83fe-9f7971ce2323" />
+<img width="998" height="525" alt="7_closed_aler_true_postive png" src="https://github.com/user-attachments/assets/7033d5c4-805c-4f78-bf9d-871f98a2866d" />
 
 ### Remediation Recommendations (from lab notes)
 - Immediate containment (enabled in simulation)
@@ -55,7 +48,7 @@ All screenshots are in the `/screenshots/` folder:
 - Block 107.191.58.0/24 range & hunt for similar IOCs org-wide
 
 ### Files in this Case
-- `EventID_320_SOC342.docx` – Full incident report template  
+- `EventID_320_SOC342.docx` – Full incident report template
 - `analyst_notes.md` – Raw investigation notes  
 - `/screenshots/` – Visual proof of each investigation step  
 
