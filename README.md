@@ -48,7 +48,7 @@ All screenshots are in the `/screenshots/` folder:
 - Block 107.191.58.0/24 range & hunt for similar IOCs org-wide
 
 ### Files in this Case
-- `EventID_320_SOC342.docx` – Full incident report template
+-[EventID 320_SOC342.pdf](https://github.com/user-attachments/files/25137882/EventID.320_SOC342.pdf) – Full incident report template
 - `analyst_notes.md` – Raw investigation notes  
 - `/screenshots/` – Visual proof of each investigation step  
 
