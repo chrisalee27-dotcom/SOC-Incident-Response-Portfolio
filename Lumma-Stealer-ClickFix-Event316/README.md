@@ -65,7 +65,7 @@ The email was received and opened, leading to the fake website displaying a conv
 
 <img width="616" height="146" alt="Malicious Command 060011" src="https://github.com/user-attachments/assets/8de96c83-4c89-4f28-94e5-e4e000630206" />
 
-**•	Analysis:**The PowerShell command uses obfuscation (e.g., replacing ']' to form "mshta.exe") to bypass detection and download/execute a payload disguised as "maloy.mp4" (likely an HTA file or DLL for side-loading). mshta.exe is abused to run remote scripts, a common tactic in ClickFix attacks.
+**•	Analysis:** The PowerShell command uses obfuscation (e.g., replacing ']' to form "mshta.exe") to bypass detection and download/execute a payload disguised as "maloy.mp4" (likely an HTA file or DLL for side-loading). mshta.exe is abused to run remote scripts, a common tactic in ClickFix attacks.
 
 •	The payload is associated with Lumma Stealer, confirmed by threat intelligence tagging in logs.
 
