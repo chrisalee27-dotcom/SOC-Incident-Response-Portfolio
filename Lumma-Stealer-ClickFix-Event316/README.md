@@ -76,16 +76,29 @@ Step 5: Sandbox and Containment Verification
 •	Host containment successful; no further processes or persistence observed.
 
 Recommendations
+
 **1.	Immediate Actions:**
+
 o	Reset credentials for affected user (Dylan) and scan for exfiltrated data.
+
 o	Full malware scan and wipe/reimage the contained host.
+
 **2.	Preventive Measures:**
+
 o	Enhance email filters to block spoofed Microsoft domains and suspicious attachments.
+
 o	Implement user training on phishing recognition, especially fake updates and CAPTCHAs.
+
 o	Enable automatic updates and block execution of mshta.exe/PowerShell from untrusted sources.
+
 o	Monitor for similar IoCs across the network.
+
 **3.	Long-Term:**
+
 o	Deploy advanced threat protection (e.g., behavioral analysis) to detect ClickFix tactics.
+
 o	Regularly review abuse reports for hosted IPs.
+
 **Conclusion**
+
 This incident highlights the evolving tactics of Lumma Stealer distributors using ClickFix phishing to bypass traditional defenses. Prompt containment mitigated potential data loss, but underscores the need for vigilance against social engineering attacks. No ongoing threat detected; case closed pending remediation verification.
