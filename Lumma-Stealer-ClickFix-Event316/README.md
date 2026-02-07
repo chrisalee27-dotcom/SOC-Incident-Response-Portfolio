@@ -76,7 +76,9 @@ The email was received and opened, leading to the fake website displaying a conv
 <img width="895" height="515" alt="IP Matched Time 055546" src="https://github.com/user-attachments/assets/17d8df58-9e43-4ffa-bec7-7b0f785e699f" />
 
 **•	Primary suspicious connection: **132.232.40.201 (Tencent Cloud, China; ASN: AS45090). This IP has a history of abuse, including IoCs reported by the Government of India and brute-force attempts. Confidence of abuse: 0%, but flagged in multiple threat feeds as Lumma C2.
+
 **Step 4: Threat Intelligence Enrichment**
+
 **•	Domain Analysis:**
 
 <img width="1316" height="568" alt="Virustotal 062334" src="https://github.com/user-attachments/assets/eb2f4d64-dd64-4176-bf30-8ca772f4274c" />
