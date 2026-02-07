@@ -31,7 +31,9 @@ Step 2: Endpoint and Command Line Analysis
 •	Browser history confirmed access to https://windows-update.site/ at 2025-03-13 23:26:08. 
 <img width="1213" height="300" alt="Browser History Time Stamp055258" src="https://github.com/user-attachments/assets/a56acf08-0c73-4823-a023-a451be1c6138" />
 •	Executed Commands:
+
 <img width="611" height="190" alt="Malicious Command 060027" src="https://github.com/user-attachments/assets/9510c613-96f0-4b85-9e47-85c333d91f0e" />
+
 <img width="616" height="146" alt="Malicious Command 060011" src="https://github.com/user-attachments/assets/8de96c83-4c89-4f28-94e5-e4e000630206" />
 •	Analysis: The PowerShell command uses obfuscation (e.g., replacing ']' to form "mshta.exe") to bypass detection and download/execute a payload disguised as "maloy.mp4" (likely an HTA file or DLL for side-loading). mshta.exe is abused to run remote scripts, a common tactic in ClickFix attacks.
 •	The payload is associated with Lumma Stealer, confirmed by threat intelligence tagging in logs.
@@ -49,17 +51,7 @@ o	overcoatpassably.shop: Hosts malware payloads; linked to Lumma distribution vi
 Step 5: Sandbox and Containment Verification
 •	URL/Attachment analyzed in third-party sandboxes (e.g., VirusTotal, URLhaus): Confirmed malicious.
 •	Host containment successful; no further processes or persistence observed.
-Indicators of Compromise (IoCs)
-Type	Indicator	Description
-Domain	windows-update.site	Fake update site
-Domain	overcoatpassably.shop	Payload hosting
-URL	https://overcoatpassably.shop/zBUZbPyVpGfdRS/maloy.mp4
-Malicious payload (disguised)
-IP	132.232.40.201	C2 server
-Email	update@windows-update.site
-Phishing sender
-Command	PowerShell/mshta.exe with obfuscated URL	Execution vector
-Tag	Lumma.Lumma Stealer	Malware family
+
 Recommendations
 1.	Immediate Actions:
 o	Reset credentials for affected user (Dylan) and scan for exfiltrated data.
